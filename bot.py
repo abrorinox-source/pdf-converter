@@ -14,7 +14,7 @@ logging.getLogger("httpx").setLevel(logging.WARNING)
 
 logger = logging.getLogger(__name__)
 
-BOT_TOKEN = "8466410998:AAFUo6iKrDN8YUTzYUkieJ_eQ76cnC5_Jps"
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
 
 # Dictionary to store images for each user: {user_id: [image_path1, image_path2, ...]}
 user_image_queues = {}
